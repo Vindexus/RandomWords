@@ -75,12 +75,17 @@ func DefaultGenerator() *Generator {
 	return &Generator{
 		Categories: map[string]*Category{
 			"all": CombineCategories("all",
+				Armor,
 				Colors,
-				Sizes,
-				Titles,
 				CosmicThings,
 				Defenders,
 				Fortresses,
+				GoodQualities,
+				PrettyAdjs,
+				RPGClasses,
+				Sizes,
+				Stories,
+				Titles,
 			),
 		},
 		DefaultCategoryLayout: []string{"all", "all", "all"},
@@ -88,8 +93,8 @@ func DefaultGenerator() *Generator {
 }
 
 func AdjNounGenerator() *Generator {
-	var adjs = CombineCategories("adj", Colors, Sizes)
-	var nouns = CombineCategories("nouns", Titles, CosmicThings)
+	var adjs = CombineCategories("adj", Colors, Sizes, GoodQualities, PrettyAdjs, Moods)
+	var nouns = CombineCategories("nouns", Titles, CosmicThings, Fortresses, Defenders, Armor)
 
 	return &Generator{
 		Categories: map[string]*Category{

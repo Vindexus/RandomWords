@@ -1,55 +1,6 @@
 package randomwords
 
-
-
-var nouns = []string{
-	"Epic",
-	"Legend",
-	"Myth",
-	"Quest",
-	"Tale",
-
-	//Animals
-	"Bear",
-	"Cat",
-	"Crow",
-	"Cougar",
-	"Dog",
-	"Dove",
-	"Eagle",
-	"Elephant",
-	"Hawk",
-	"Husky",
-	"Lion",
-	"Parakeet",
-	"Snail",
-	"Tiger",
-	"Warthog",
-
-	//Armor
-	"Armor",
-	"Boots",
-	"Breastplate",
-	"Chainmail",
-	"Crown",
-	"Doublet",
-	"Helm",
-	"Shield",
-
-	//RPG classes
-	"Bard",
-	"Knight",
-	"Mage",
-	"Pally",
-	"Paladin",
-	"Sorcerer",
-	"Warlock",
-	"Wizard",
-
-	//Defenders
-
-}
-
+// Adjectives
 var Sizes = &Category{
 	Name: "sizes",
 	Words: []string{
@@ -59,18 +10,131 @@ var Sizes = &Category{
 		"Huge",
 	},
 }
+var Moods = &Category{
+	Name: "moods",
+	Words: []string{
+		"Ecstatic",
+		"Elated",
+		"Happy",
+		"Sad",
+		"Somber",
+		"Vengeful",
+	},
+}
 
 var Colors = &Category{
 	Name: "colors",
 	Words: []string{
+		"Auburn",
 		"Black",
+		"Blue",
 		"Bronze",
+		"Brown",
+		"Coral",
+		"Cyan",
 		"Dark",
+		"Fuchsia",
 		"Gold",
+		"Green",
+		"Ivory",
+		"Lime",
+		"Magenta",
+		"Orange",
 		"Pink",
+		"Purple",
 		"Red",
 		"Silver",
+		"Teal",
 		"White",
+		"Yellow",
+	},
+}
+
+var GoodQualities = &Category{
+	Name: "goodqualities",
+	Words: []string{
+		"Loyal",
+		"Strong",
+		"Steadfast",
+		"Smart",
+		"Kind",
+		"Keen",
+		"Brave",
+		"Courageous",
+	},
+}
+
+var PrettyAdjs = &Category{
+	Name: "prettyajds",
+	Words: []string{
+		"Awesome",
+		"Beautiful",
+		"Pretty",
+		"Gorgeous",
+		"Breathtaking",
+	},
+}
+
+// Nouns
+var Stories = &Category{
+	Name: "stories",
+	Words: []string{
+		"Epic",
+		"Legend",
+		"Myth",
+		"Quest",
+		"Tale",
+	},
+}
+
+var Animals = &Category{
+	Name: "animals",
+	Words: []string{
+
+		"Bear",
+		"Cat",
+		"Crow",
+		"Cougar",
+		"Dog",
+		"Dove",
+		"Eagle",
+		"Elephant",
+		"Hawk",
+		"Husky",
+		"Lion",
+		"Parakeet",
+		"Snail",
+		"Tiger",
+		"Warthog",
+	},
+}
+var Armor = &Category{
+	Name: "armor",
+	Words: []string{
+		//Armor
+		"Armor",
+		"Boots",
+		"Breastplate",
+		"Chainmail",
+		"Crown",
+		"Doublet",
+		"Helm",
+		"Shield",
+	},
+}
+
+var RPGClasses = &Category{
+	Name: "rpgclasses",
+	Words: []string{
+		//RPG classes
+		"Bard",
+		"Knight",
+		"Mage",
+		"Pally",
+		"Paladin",
+		"Sorcerer",
+		"Warlock",
+		"Wizard",
 	},
 }
 
